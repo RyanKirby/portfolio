@@ -20,20 +20,23 @@ app.use(require('webpack-dev-middleware')(compiler, {
 
 app.use(require('webpack-hot-middleware')(compiler));
 
-// var routes = require('./server/config/routes')(app);
+var routes = require('./server/config/routes')(app);
 
 // app.use(express.static('src'));npm
-app.use('/images', express.static(path.join(__dirname, 'src/app/images')));
+app.use('/images', express.static(path.join(__dirname, 'src/app/media/images')));
+app.use('/media', express.static(path.join(__dirname, 'src/app/media/videos')));
 
 app.get('*', function(req, res) {
   res.redirect('/');
 });
 
-app.listen(7780, 'localhost', function(err) {
+var PORT = 7780;
+
+app.listen(PORT, 'localhost', function(err) {
   if (err) {
     console.log(err);
     return;
   }
 
-  console.log('Listening at localhost:7771');
+  console.log('Server started on localhost:' + PORT);
 });

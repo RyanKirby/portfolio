@@ -1,0 +1,15 @@
+<div [ngClass]="className">
+	<div class="img-card" [ngClass]="{'img-crd-filter-one':type==1,'img-crd-filter-two':type==2,'img-crd-filter-three':type==3}">
+		<div class="img-crd-img">
+			<img [src]="img" />
+			<div class="img-crd-filter"
+			></div>
+		</div>
+		<div class="img-crd-content">
+			<h3 class="scd">{{title}}</h3>
+			<div class="clear"></div>
+			<p class="scd" *ngFor="let cont of content;let i=index">{{cont}}</p>
+			<p><a href="" class="scd">View Website ></a></p>
+		</div>
+	</div>
+</div>

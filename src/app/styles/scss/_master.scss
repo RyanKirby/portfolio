@@ -8,7 +8,7 @@ body{
 	overflow: auto;
 }
 
-h1,h2,h3,h4,p{
+h1,h2,h3,h4,p,a{
 	-webkit-font-smoothing: antialiased;
 	font-family: 'Roboto', sans-serif;
 	color: $clr-prm;
@@ -28,22 +28,30 @@ h2,h3{
 	margin:12px 0;
 }
 
-h1.prm, h2.prm, h3.prm, h4.prm, p.prm, span.prm{
+a{
+	text-decoration: none;
+}
+
+a:hover{
+	text-decoration: underline;
+}
+
+h1.prm, h2.prm, h3.prm, h4.prm, p.prm, span.prm, a.prm{
 	color: $clr-prm
 }
 
-h1.scd, h2.scd, h3.scd, h4.scd, p.scd, span.scd{
+h1.scd, h2.scd, h3.scd, h4.scd, p.scd, span.scd, a.scd{
 	color: $clr-scd
 }
 
-h1.thr, h2.thr, h3.thr, h4.thr, p.thr, span.thr{
+h1.thr, h2.thr, h3.thr, h4.thr, p.thr, span.thr, a.thr{
 	color: $clr-thr
 }
 
-h1.frt, h2.frt, h3.frt, h4.frt, p.frt, span.frt{
+h1.frt, h2.frt, h3.frt, h4.frt, p.frt, span.frt, a.frt{
 	color: $clr-frt
 }
 
-h1.fiv, h2.fiv, h3.fiv, h4.fiv, p.fiv, span.fiv{
+h1.fiv, h2.fiv, h3.fiv, h4.fiv, p.fiv, span.fiv, a.fiv{
 	color: $clr-fiv
 }

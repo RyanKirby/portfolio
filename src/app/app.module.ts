@@ -18,6 +18,7 @@ import { TechComponent }   from './components/tech/tech.component';
 
 //Common
 import { CardComponent }   from './components/common/card/card.component';
+import { ImgCardComponent }   from './components/common/img-card/img-card.component';
 import { SlideButtonComponent }   from './components/common/slide-button/slide-button.component';
 
 
@@ -26,7 +27,7 @@ import { SlideButtonComponent }   from './components/common/slide-button/slide-b
   AppComponent,//app
 
   HomeComponent,SideBarComponent,WorkComponent,TechComponent,//pages
-  CardComponent,SlideButtonComponent//common
+  CardComponent,SlideButtonComponent,ImgCardComponent//common
   ],
   imports: [
   BrowserModule,
