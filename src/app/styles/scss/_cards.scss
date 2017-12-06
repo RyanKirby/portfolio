@@ -1,0 +1,141 @@
+.card{
+  position: relative;
+  margin-bottom: 24px;
+  cursor: pointer;
+  transition: 200ms;
+  // min-height: 230px;
+
+  .dummy-image{
+    width:80px;
+    height:80px;
+    position: absolute;
+    top: 60px;
+    border: 2px solid $bck-frt;
+    border-radius: 45px;
+    transition: 200ms;
+    overflow: hidden;
+    img{
+      object-fit: cover;
+      width:80px;
+      height:80px;
+      display:block;
+    }
+  }
+
+  .hover-over-title{
+    position: relative;
+    width:0;
+    left:-30px;
+    transition: 200ms;
+    background: $bck-scd;
+    z-index: 1;
+    box-shadow: 8px 8px 5px rgba(0,0,0,0.24);
+    h3{
+      padding-left:100px;
+      width: 200px;
+      padding-top:16px;
+    }
+  }
+
+  .crd-cont-p{
+    position: relative;
+  }
+
+  .hover-over{
+    position:absolute;
+    bottom:-16px;
+    right:-16px;
+    max-height: 0;
+    background:$bck-prm;
+    transition: 300ms;
+    overflow: hidden;
+    box-shadow: 8px 8px 5px rgba(0,0,0,0.24);
+    p{
+      opacity: 0;
+    }
+  }
+
+  .crd-cont-disp{
+    position: relative;
+  }
+
+  .crd-container{
+    background: $bck-thr;
+    border-radius: 3px;
+    margin-left:30px;
+    margin-right: 16px;
+    overflow: visible;
+    box-shadow: 8px 8px 5px rgba(0,0,0,0.24);
+    min-height: 220px;
+    transition: 200ms;
+  }
+
+  .crd-content{
+    margin-top: 16px;
+    padding-left:84px;
+  }
+
+  p{
+    padding:0 16px 16px 16px;
+  }
+
+  h3{
+    padding-bottom: 12px;
+  }
+}
+
+.card:hover{
+  .hover-over-title{
+    width:100%;
+    box-shadow: 8px 8px 5px rgba(0,0,0,0.24);
+  }
+
+  .hover-over{
+    max-height: 400px;
+    padding:48px 0;
+  }
+}
+
+.boxes{
+  box-shadow: 8px 8px 5px rgba(0,0,0,0.24);
+}
+
+.card-two{
+  background: $bck-prm;
+  height: 200px;
+  position: relative;
+  cursor: pointer;
+
+  .card-two-img{
+    width:100%;
+    height: 224px;
+
+    img{
+      object-fit: cover;
+      width:100%;
+      height:200px;
+      display:block;
+    }
+
+    .card-two-filter{
+      position:absolute;
+      top:0;
+      width:100%;
+      height:200px;
+      background:rgba(0,0,0,0.54);
+
+    }
+  }
+  .card-two-content{
+    position: absolute;
+    top:0;
+    padding: 12px;
+    transition: 200ms;
+  }
+}
+
+.card-two:hover{
+  .card-two-content{
+    top:12px;
+  }
+}

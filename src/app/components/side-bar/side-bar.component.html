@@ -1,0 +1,10 @@
+<div class="menu animated slideInLeft">
+	<h1 class="scd"><span class="scd">ryan</span><span class="thr">kirby</span></h1>
+	<p class="thr">I am a <span class="scd">{{text}}</span><span class="flash">_</span></p>
+	<div class="menu-options">
+		<slide-button title="Home" [type]="0" (click)="go('/')"></slide-button>
+		<slide-button title="Work" [left]="true" [type]="1" (click)="go('/work')"></slide-button>
+		<slide-button title="Tech" [type]="2" (click)="go('/tech')"></slide-button>
+		<slide-button title="Contact" [left]="true" [type]="0"></slide-button>
+	</div>
+</div>

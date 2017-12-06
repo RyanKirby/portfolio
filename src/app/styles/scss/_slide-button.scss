@@ -1,0 +1,46 @@
+.sl-bt-container{
+	position: relative;
+	width:100%;
+	height: 43px;
+	cursor: pointer;
+
+	.sl-bt-title{
+		position: relative;
+		padding:12px 0;
+	}
+
+	.sl-bt-hover{
+		width:0;
+		position: absolute;
+		height: 43px;
+		transition: 300ms;
+	}
+
+	.sl-bt-left{
+		right:0;
+	}
+}
+
+
+
+.sl-bt-container:hover{
+	.sl-bt-hover{
+		width:100%;
+	}
+}
+
+.sl-bt-one{
+	background: $bck-prm;
+}
+
+.sl-bt-two{
+	background: $bck-scd;
+}
+
+.sl-bt-three{
+	background: $bck-thr;
+}
+
+.sl-bt-four{
+	background: $bck-frt;
+}

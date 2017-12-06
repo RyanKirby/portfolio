@@ -1,0 +1,697 @@
+//Variables used to create columns
+$one: 1/12 * 100%;
+$two: 2/12 * 100%;
+$three: 3/12 * 100%;
+$four: 4/12 * 100%;
+$five: 5/12 * 100%;
+$six: 6/12 * 100%;
+$seven: 7/12 * 100%;
+$eight: 8/12 * 100%;
+$nine: 9/12 * 100%;
+$ten: 10/12 * 100%;
+$eleven: 11/12 * 100%;
+$twelve: 100%;
+
+//Set the screen sizes
+$mb-wd: 479px;
+$xs-wd: 480px;
+$sm-wd: 640px;
+$md-wd: 840px;
+$lg-wd: 1024px;
+$xl-wd: 1280px;
+
+.rs-con-wide{
+  width: 100%;
+  margin: 0 auto;
+  max-width: $xl-wd;
+}
+
+.rs-con-wide-full{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.rs-con {
+  margin-left: auto;
+  margin-right: auto;
+  width: $xl-wd;
+}
+
+.rs-row{
+  width: 100%;
+}
+
+.rs-pad{
+  margin: 8px;
+  min-height: 24px;
+}
+
+.rs-pad-left{
+  margin: 8px 8px 8px 16px;
+  min-height: 24px;
+}
+
+.rs-pad-right{
+  margin: 8px 16px 8px 8px;
+  min-height: 24px;
+}
+
+.rs-pull-right{
+  float:right;
+}
+
+.rs-pull-left{
+  float:left;
+}
+
+.clear{
+  clear:both;
+}
+
+
+@function sumWid($pxl) {
+  @return $pxl - 1;
+}
+
+@mixin col-mb() {
+  .rs-pull-right-mb{
+    float: right;
+  }
+
+  .rs-mb-1 {
+    width: $one;
+    float: left;
+  }
+
+  .rs-mb-2 {
+    width: $two;
+    float: left;
+  }
+
+  .rs-mb-3 {
+    width: $three;
+    float: left;
+  }
+
+  .rs-mb-4 {
+    width: $four;
+    float: left;
+  }
+
+  .rs-mb-5 {
+    width: $five;
+    float: left;
+  }
+
+  .rs-mb-6 {
+    width: $six;
+    float: left;
+  }
+
+  .rs-mb-7 {
+    width: $seven;
+    float: left;
+  }
+
+  .rs-mb-8 {
+    width: $eight;
+    float: left;
+  }
+
+  .rs-mb-9 {
+    width: $nine;
+    float: left;
+  }
+
+  .rs-mb-10 {
+    width: $ten;
+    float: left;
+  }
+
+  .rs-mb-11 {
+    width: $eleven;
+    float: left;
+  }
+
+  .rs-mb-12 {
+    width: $twelve;
+    float: left;
+  }
+
+  .rs-pad{
+    margin: 8px 16px;
+    min-height: 24px;
+  }
+
+  .rs-pad-left-mb{
+    margin: 8px 8px 8px 16px;
+    min-height: 24px;
+  }
+
+  .rs-pad-right-mb{
+    margin: 8px 16px 8px 8px;
+    min-height: 24px;
+  }
+}
+@mixin col-xs() {
+
+  .rs-pad{
+    margin: 8px;
+    min-height: 24px;
+  }
+
+  .rs-pull-right-xs{
+    float: right;
+  }
+
+  .rs-xs-1 {
+    width: $one;
+    float: left;
+  }
+
+  .rs-xs-2 {
+    width: $two;
+    float: left;
+  }
+
+  .rs-xs-3 {
+    width: $three;
+    float: left;
+  }
+
+  .rs-xs-4 {
+    width: $four;
+    float: left;
+  }
+
+  .rs-xs-5 {
+    width: $five;
+    float: left;
+  }
+
+  .rs-xs-6 {
+    width: $six;
+    float: left;
+  }
+
+  .rs-xs-7 {
+    width: $seven;
+    float: left;
+  }
+
+  .rs-xs-8 {
+    width: $eight;
+    float: left;
+  }
+
+  .rs-xs-9 {
+    width: $nine;
+    float: left;
+  }
+
+  .rs-xs-10 {
+    width: $ten;
+    float: left;
+  }
+
+  .rs-xs-11 {
+    width: $eleven;
+    float: left;
+  }
+
+  .rs-xs-12 {
+    width: $twelve;
+    float: left;
+  }
+
+  .rs-pad-left-xs{
+    margin: 8px 8px 8px 16px;
+    min-height: 24px;
+  }
+
+  .rs-pad-right-xs{
+    margin: 8px 16px 8px 8px;
+    min-height: 24px;
+  }
+}
+@mixin col-sm() {
+  .rs-pull-right-sm{
+    float: right;
+  }
+
+  .rs-sm-1 {
+    width: $one;
+    float: left;
+  }
+
+  .rs-sm-2 {
+    width: $two;
+    float: left;
+  }
+
+  .rs-sm-3 {
+    width: $three;
+    float: left;
+  }
+
+  .rs-sm-4 {
+    width: $four;
+    float: left;
+  }
+
+  .rs-sm-5 {
+    width: $five;
+    float: left;
+  }
+
+  .rs-sm-6 {
+    width: $six;
+    float: left;
+  }
+
+  .rs-sm-7 {
+    width: $seven;
+    float: left;
+  }
+  .rs-sm-8 {
+    width: $eight;
+    float: left;
+  }
+  .rs-sm-9 {
+    width: $nine;
+    float: left;
+  }
+  .rs-sm-10 {
+    width: $ten;
+    float: left;
+  }
+  .rs-sm-11 {
+    width: $eleven;
+    float: left;
+  }
+  .rs-sm-12 {
+    width: $twelve;
+    float: left;
+  }
+  .rs-pad-left-sm{
+    margin: 8px 8px 8px 16px;
+    min-height: 24px;
+  }
+
+  .rs-pad-right-sm{
+    margin: 8px 16px 8px 8px;
+    min-height: 24px;
+  }
+}
+@mixin col-md() {
+  .rs-pull-right-md{
+    float: right;
+  }
+
+  .rs-md-1 {
+    width: $one;
+    float: left;
+  }
+
+  .rs-md-2 {
+    width: $two;
+    float: left;
+  }
+
+  .rs-md-3 {
+    width: $three;
+    float: left;
+  }
+
+  .rs-md-4 {
+    width: $four;
+    float: left;
+  }
+
+  .rs-md-5 {
+    width: $five;
+    float: left;
+  }
+
+  .rs-md-6 {
+    width: $six;
+    float: left;
+  }
+
+  .rs-md-7 {
+    width: $seven;
+    float: left;
+  }
+
+  .rs-md-8 {
+    width: $eight;
+    float: left;
+  }
+
+  .rs-md-9 {
+    width: $nine;
+    float: left;
+  }
+
+  .rs-md-10 {
+    width: $ten;
+    float: left;
+  }
+
+  .rs-md-11 {
+    width: $eleven;
+    float: left;
+  }
+
+  .rs-md-12 {
+    width: $twelve;
+    float: left;
+  }
+  .rs-pad-left-md{
+    margin: 8px 8px 8px 16px;
+    min-height: 24px;
+  }
+
+  .rs-pad-right-md{
+    margin: 8px 16px 8px 8px;
+    min-height: 24px;
+  }
+}
+@mixin col-lg() {
+  .rs-pull-right-lg{
+    float: right;
+  }
+
+  .rs-lg-1 {
+    width: $one;
+    float: left;
+  }
+  .rs-lg-2 {
+    width: $two;
+    float: left;
+  }
+  .rs-lg-3 {
+    width: $three;
+    float: left;
+  }
+  .rs-lg-4 {
+    width: $four;
+    float: left;
+  }
+  .rs-lg-5 {
+    width: $five;
+    float: left;
+  }
+  .rs-lg-6 {
+    width: $six;
+    float: left;
+  }
+  .rs-lg-7 {
+    width: $seven;
+    float: left;
+  }
+  .rs-lg-8 {
+    width: $eight;
+    float: left;
+  }
+  .rs-lg-9 {
+    width: $nine;
+    float: left;
+  }
+  .rs-lg-10 {
+    width: $ten;
+    float: left;
+  }
+  .rs-lg-11 {
+    width: $eleven;
+    float: left;
+  }
+  .rs-lg-12 {
+    width: $twelve;
+    float: left;
+  }
+
+  .rs-pad-left-lg{
+    margin: 8px 8px 8px 16px;
+    min-height: 24px;
+  }
+
+  .rs-pad-right-lg{
+    margin: 8px 16px 8px 8px;
+    min-height: 24px;
+  }
+}
+@mixin col-xl() {
+  .rs-pull-right-xl{
+    float: right;
+  }
+
+  .rs-xl-1 {
+    width: $one;
+    float: left;
+  }
+  .rs-xl-2 {
+    width: $two;
+    float: left;
+  }
+  .rs-xl-3 {
+    width: $three;
+    float: left;
+  }
+  .rs-xl-4 {
+    width: $four;
+    float: left;
+  }
+  .rs-xl-5 {
+    width: $five;
+    float: left;
+  }
+  .rs-xl-6 {
+    width: $six;
+    float: left;
+  }
+  .rs-xl-7 {
+    width: $seven;
+    float: left;
+  }
+  .rs-xl-8 {
+    width: $eight;
+    float: left;
+  }
+  .rs-xl-9 {
+    width: $nine;
+    float: left;
+  }
+  .rs-xl-10 {
+    width: $ten;
+    float: left;
+  }
+  .rs-xl-11 {
+    width: $eleven;
+    float: left;
+  }
+  .rs-xl-12 {
+    width: $twelve;
+    float: left;
+  }
+  .rs-pad-left-xl{
+    margin: 8px 8px 8px 16px;
+    min-height: 24px;
+  }
+
+  .rs-pad-right-xl{
+    margin: 8px 16px 8px 8px;
+    min-height: 24px;
+  }
+}
+
+.rs-con-wide {
+  width: 100%;
+  overflow: hidden;
+}
+
+.rs-con {
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+}
+
+.rs-inline {
+  width: 100%;
+}
+
+/*Screen sizing for desktop*/
+//@media screen and (max-width: $mb-wd) {
+//  @include col-mb();
+//  .rs-con {
+//    width: 100%;
+//  }
+//  .rs-mb-hidden{
+//    display:none;
+//  }
+//
+//}
+
+
+.rs-mb-visible{
+  display:none;
+}
+.rs-xs-visible{
+  display: none;
+}
+.rs-sm-visible{
+  display: none;
+}
+.rs-md-visible{
+  display: none;
+}
+.rs-lg-visible{
+  display: none;
+}
+.rs-xl-visible{
+  display: none;
+}
+
+/*Screen sizing for desktop*/
+@media screen and (max-width: $mb-wd) {
+  @include col-mb();
+  .rs-con {
+    max-width: $xs-wd;
+    width:100%;
+  }
+
+  .rs-mb-hidden{
+    display:none;
+  }
+  .rs-mb-visible{
+    display:block;
+  }
+}
+
+@media screen and (min-width: $xs-wd) {
+  @include col-mb();
+  @include col-xs();
+  .rs-con {
+    width: $xs-wd;
+  }
+  .rs-xs-hidden{
+    display:none;
+  }
+
+  .rs-mb-visible{
+    display:none;
+  }
+  .rs-xs-visible{
+    display:block;
+  }
+}
+
+@media screen and (min-width: $sm-wd) {
+  @include col-mb();
+  @include col-xs();
+  @include col-sm();
+  .rs-con {
+    width: $sm-wd;
+  }
+  .rs-sm-hidden{
+    display:none;
+  }
+  .rs-mb-visible{
+    display:none;
+  }
+  .rs-xs-visible{
+    display:none;
+  }
+  .rs-sm-visible{
+    display: block;
+  }
+
+}
+
+@media screen and (min-width: $md-wd) {
+  @include col-mb();
+  @include col-xs();
+  @include col-sm();
+  @include col-md();
+  .rs-con {
+    width: $md-wd;
+  }
+  .rs-md-hidden{
+    display:none;
+  }
+  .rs-mb-visible{
+    display:none;
+  }
+  .rs-xs-visible{
+    display:none;
+  }
+  .rs-sm-visible{
+    display: none;
+  }
+  .rs-md-visible{
+    display: block;
+  }
+}
+
+@media screen and (min-width: $lg-wd) {
+  @include col-mb();
+  @include col-xs();
+  @include col-sm();
+  @include col-md();
+  @include col-lg();
+  .rs-con {
+    width: $lg-wd;
+  }
+  .rs-lg-hidden{
+    display:none;
+  }
+  .rs-mb-visible{
+    display:none;
+  }
+  .rs-xs-visible{
+    display:none;
+  }
+  .rs-sm-visible{
+    display: none;
+  }
+  .rs-md-visible{
+    display: none;
+  }
+  .rs-lg-visible{
+    display: block;
+  }
+
+}
+
+@media screen and (min-width: $xl-wd) {
+  @include col-mb();
+  @include col-xs();
+  @include col-sm();
+  @include col-md();
+  @include col-lg();
+  @include col-xl();
+  .rs-con {
+    width: $lg-wd;
+  }
+  .rs-xl-hidden{
+    display:none;
+  }
+  .rs-mb-visible{
+    display:none;
+  }
+  .rs-xs-visible{
+    display:none;
+  }
+  .rs-sm-visible{
+    display: none;
+  }
+  .rs-md-visible{
+    display: none;
+  }
+  .rs-lg-visible{
+    display: none;
+  }
+  .rs-xl-visible{
+    display: block;
+  }
+}

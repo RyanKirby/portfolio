@@ -1,0 +1,49 @@
+$width: 100% / 3;
+$triangleWidth: 32vh;
+
+body{
+	margin: 0;
+	padding: 0;
+	-ms-overflow-style: none;
+	overflow: auto;
+}
+
+h1,h2,h3,h4,p{
+	-webkit-font-smoothing: antialiased;
+	font-family: 'Roboto', sans-serif;
+	color: $clr-prm;
+	margin: 0;
+	padding:0;
+}
+
+h1{
+	font-size: 48px;
+	font-weight: 300;
+	text-align: center;
+	color: $clr-prm;
+	margin: 12px  6px;
+}
+
+h2,h3{
+	margin:12px 0;
+}
+
+h1.prm, h2.prm, h3.prm, h4.prm, p.prm, span.prm{
+	color: $clr-prm
+}
+
+h1.scd, h2.scd, h3.scd, h4.scd, p.scd, span.scd{
+	color: $clr-scd
+}
+
+h1.thr, h2.thr, h3.thr, h4.thr, p.thr, span.thr{
+	color: $clr-thr
+}
+
+h1.frt, h2.frt, h3.frt, h4.frt, p.frt, span.frt{
+	color: $clr-frt
+}
+
+h1.fiv, h2.fiv, h3.fiv, h4.fiv, p.fiv, span.fiv{
+	color: $clr-fiv
+}
