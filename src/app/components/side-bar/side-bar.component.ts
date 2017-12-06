@@ -14,6 +14,7 @@ export class SideBarComponent implements OnInit {
 	constructor(private _nav:NavService){}
 
 	@Input()  text:string;
+	@Input()  open:boolean;
 
 	ngOnInit(){
 		

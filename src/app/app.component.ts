@@ -7,7 +7,8 @@ import { SideBarComponent } from './components/side-bar/side-bar.component';
 @Component({
 	selector: 'app-root',
 	template: `
-	<side-bar [(text)]="text"></side-bar>
+	<div class="menu-icon" (click)="togOpen()"></div>
+	<side-bar [(text)]="text" [open]="openMenu"></side-bar>
 	<div class="container">
 		<div class="rs-con-wide">
 			<router-outlet></router-outlet>
@@ -26,6 +27,7 @@ export class AppComponent implements OnInit{
 	words:string[] = ['full-stack developer','web developer','freelancer'];
 	i:number = 0;
 	open:boolean[] = [true, false];
+	openMenu:boolean = false;
 
 	ngOnInit(){
 		setTimeout(res => {
@@ -33,6 +35,9 @@ export class AppComponent implements OnInit{
 		}, 2000);
 	}
 
+	togOpen(){
+		this.openMenu = !this.openMenu;
+	}
 
 	changeText(){
 		if(!this.add){

@@ -55,3 +55,77 @@ h1.frt, h2.frt, h3.frt, h4.frt, p.frt, span.frt, a.frt{
 h1.fiv, h2.fiv, h3.fiv, h4.fiv, p.fiv, span.fiv, a.fiv{
 	color: $clr-fiv
 }
+
+.container{
+	margin: 0px;
+	padding: 0px;
+	width: -webkit-calc(100% - 300px);
+	width: -moz-calc(100% - 300px);
+	width: calc(100% - 300px);
+	max-width: 2024px; 
+	right: 0;
+	position: absolute;
+	transition:200ms;
+}
+
+.menu{
+	position: fixed;
+	top:0;
+	left:0;
+	width:300px;
+	height:100vh;
+	background: $bck-thr;
+	z-index: 1;
+	text-align: center;
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.24);
+	transition:200ms;
+
+	h1{
+		margin:22px;
+	}
+
+	.menu-options{
+		padding-top: 48px;
+	}
+}
+
+.menu-icon{
+	position: fixed;
+	width:50px;
+	height:50px;
+	top:24px;
+	left:24px;
+	border-radius:25px;
+	background: $clr-scd;
+	border:1px solid $bck-prm;
+	box-shadow: 5px 5px 5px rgba(0,0,0,0.24);
+	z-index: 2;
+	cursor:pointer;
+}
+
+@media screen and (max-width: $xl-wd) {
+	.container{
+		width: -webkit-calc(100% - 250px);
+		width: -moz-calc(100% - 250px);
+		width: calc(100% - 250px);
+	}
+
+	.menu{
+		width:250px;
+	}
+}
+
+@media screen and (max-width: $md-wd) {
+	.container{
+		width: 100%;
+	}
+
+	.menu{
+		width:250px;
+		left:-300px;
+	}
+
+	.open{
+		left:0;
+	}
+}
